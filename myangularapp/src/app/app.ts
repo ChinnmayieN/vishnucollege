@@ -5,11 +5,12 @@ import { Navbar } from './pages/navbar/navbar';
 import { Home } from './pages/home/home';
 import { Fetchdata } from './pages/fetchdata/fetchdata';
 import { LowerCasePipe , UpperCasePipe , TitleCasePipe , CurrencyPipe} from '@angular/common';
+import { EmojiPipe } from './emoji-pipe';
 
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Fetchdata, LowerCasePipe, UpperCasePipe, TitleCasePipe, CurrencyPipe, Home],
+  imports: [RouterOutlet, Fetchdata, LowerCasePipe,Navbar, UpperCasePipe, TitleCasePipe, CurrencyPipe, Home , EmojiPipe],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
